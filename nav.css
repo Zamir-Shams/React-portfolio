@@ -1,0 +1,43 @@
+nav{
+   background: rgba(0, 0, 0, 0.3);
+   width: max-content;
+   display: block;
+   padding: 1rem 1.7rem;
+   z-index: 2;
+   position: fixed;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: 0;
+   display: flex;
+   gap: 0.9rem;
+   border-radius: 3rem;
+   backdrop-filter: blur(15px);
+}
+
+nav a{
+   background: transparent;
+   padding: 0.9rem;
+   display: flex;
+   color: var(--color-light);
+   font-size: 1.2rem;
+   transition: var(--transition);
+   border-radius: 4rem 4rem 0 0;
+   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+
+nav a:hover{
+   transform: translateY(-1rem);
+   background: var(--color-primary-variant);
+   color: var(--color-bg);
+   border-radius: 4rem 4rem 0 0;
+   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+
+}
+
+nav a.active{
+   background: var(--color-primary);
+   color: var(--color-bg);
+}

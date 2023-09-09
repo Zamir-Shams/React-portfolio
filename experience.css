@@ -1,0 +1,130 @@
+.experience__container{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 2rem;
+}
+
+.experience__container > div{
+   background: var(--color-bg-variant);
+   padding: 1.4rem;
+   border-radius: 2rem;
+   border: 1px solid transparent;
+   transition: var(--transition);
+}
+
+.experience__container > div:hover{
+   border-color: var(--color-primary-variant);
+   cursor: default;
+}
+
+.experience__container > div h3{
+   text-align: center;
+   margin: .8rem 0 2.4rem 0;
+   color: var(--color-primary);
+}
+
+.experience__content{
+   display: grid;
+   grid-template-columns: 1fr;
+   row-gap: 1.5rem;
+   border-radius: .5rem;
+}
+
+.experience__details{
+   display: flex;
+   flex-direction: column;
+   box-shadow: 4px 4px 23px var(--color-primary-variant);
+   padding: .8rem;
+   border-radius: 1rem 0;
+   transition: var(--transition);
+}
+
+.experience__details:hover{
+   background: var(--color-primary);
+   color: var(--color-bg);
+}
+
+.experience__details-icon{
+   margin-top: 6px;
+   margin-right: 11px;
+   color: var(--color-primary);
+}
+
+.skill-progress{
+  position: relative;
+}
+
+
+.skill-progress .outer{
+   width: 100%;
+   background-color: var(--color-light);
+   height: .6rem;
+   border-radius: .3rem;
+   margin-top: .2rem;
+}
+
+.skill-progress .inner{
+   width: 92%;
+   background-color: slateblue;
+   height: .6rem;
+   border-radius: .3rem;
+}
+
+.skill-progress .percent{
+   display: block;
+   position: absolute;
+   right: 2px;
+   top: .3rem;
+}
+
+.experiences .exp-btn{
+   width: fit-content;
+   background: var(--color-bg);
+   padding: .2rem .5rem;
+   border-radius: .4rem;
+   margin: .7rem 0;
+}
+
+
+
+
+
+
+/* ---------------media query for 1024px(tablet) -------------------------- */
+@media screen and (max-width:1024px){
+   .experience__container{
+      grid-template-columns: 1fr;
+   }
+
+   .experience__container > div{
+      width: 80%;
+      padding: 2rem;
+      margin: 0 auto;
+   }
+
+   .experience__content{
+      padding: 1rem;
+   }
+
+   .experience__container > div{
+      padding: 1.5rem .9rem;
+   }
+}
+
+
+
+/* ---------------media query for 600px(mobile) -------------------------- */
+@media screen and (max-width:600px){
+   .experience__container{
+      gap: 1rem;
+   }
+
+   .experience__container > div{
+      width: 100%;
+      padding: 2rem 1rem;
+   }
+
+   .experience__container > div{
+      padding: 1.5rem 0;
+   }
+}
